@@ -48,20 +48,35 @@ div {
 }
 
 .priority {
-  position: absolute;
+  /* position: absolute;
   bottom: 10px;
-  width: 100%;
+  width: 100%; */
   font-weight: bold;
 }
 .priority.high {
-  color: white;
-  background-color: red;
+  color: red;
+  ;
 }
 .priority.medium {
-  color: black;
-  background-color: yellow;
+  color: yellow;
 }
 .priority.low {
-  color: white;
-  background-color: green;
+  color: green;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 4px 6px;
+  width: 50px;
+  height: 25px;
+}
+
+.doneButton {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: green;
 }
