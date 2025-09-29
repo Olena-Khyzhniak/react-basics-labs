@@ -18,7 +18,8 @@ function App() {
     const [ formState, setFormState ] = useState({
     title: "",
     description: "",
-    deadline: ""
+    deadline: "",
+    priority: ""
   });
 
   const doneHandler = (taskIndex) => {
@@ -47,6 +48,9 @@ function App() {
           break;
       case "deadline":
           form.deadline = event.target.value;
+          break;
+          case "priority":
+          form.priority = event.target.value;
           break;
       default:
           form = formState;
@@ -81,6 +85,7 @@ console.log(formState);
           description={task.description}
           deadline={task.deadline}
           key={task.id}
+          priority={task.priority}
           done={task.done}
           markDone={() => doneHandler(index)}
           deleteTask = {() => deleteHandler(index)}
